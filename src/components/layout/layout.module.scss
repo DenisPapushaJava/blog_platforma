@@ -1,0 +1,11 @@
+.container {
+  margin: 0 15%;
+  background-color: #EBEEF3;
+  padding-bottom: 50px;
+  @media (max-width: 1300px) {
+    margin: 0 5%;
+  }
+  @media (max-width: 1000px) {
+    margin: 0 3%;
+  }
+}
