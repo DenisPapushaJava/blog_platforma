@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 import { isSetNotUserCreate, singUpUser } from '../../store/user-slice';
 import { PATH } from '../../util/constants';
-import { ErrorMessage } from '../error/error';
 import { UserForms } from '../user-forms/user-forms';
 
 const SingUp = () => {
@@ -23,7 +22,6 @@ const SingUp = () => {
 
   return (
     <>
-      {err && <ErrorMessage />}
       <UserForms signUp={true} submit={(data) => dispatch(singUpUser(data))} />
     </>
   );

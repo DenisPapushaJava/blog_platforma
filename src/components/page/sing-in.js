@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { isSetNotUserCreate, loginUser } from '../../store/user-slice';
-import { ErrorMessage } from '../error/error';
 import { SingInForm } from '../user-forms/sing-inForm';
 
 const SingIn = () => {
@@ -25,7 +24,6 @@ const SingIn = () => {
 
   return (
     <>
-      {err && <ErrorMessage />}
       <SingInForm submit={(data) => dispatch(loginUser(data))} />
     </>
   );

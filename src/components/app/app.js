@@ -14,6 +14,7 @@ import { NotFound } from '../page/not-found';
 import { SingIn } from '../page/sing-in';
 import { SingUp } from '../page/sing-up';
 import { SinglArticle } from '../page/singl-article';
+import  './style.scss';
 
 const App = () => {
   const dispatch = useDispatch();
